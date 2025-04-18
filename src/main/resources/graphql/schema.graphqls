@@ -1,0 +1,10 @@
+type Query{
+    firstQuery : String
+    fullName(firstName:String, lastName:String):String
+    fullNameByRequest(fullNameRequest: FullNameRequest) : String
+}
+
+input FullNameRequest{
+    firstName :String
+    lastName:String
+}
